@@ -18,7 +18,7 @@ pytesseract.pytesseract.tesseract_cmd =r'C:\Users\admin\AppData\Local\Programs\T
 result = pytesseract.image_to_string(img)
 result=result.strip()
 import mysql.connector
-mydb=mysql.connector.connect(host="localhost",user="root",passwd="Omganapati@1",database="mansahaidatabase")
+mydb=mysql.connector.connect(host="localhost",user="root",passwd="XXXXXXXXXXXXXX@1",database="mansahaidatabase")
 mycursor=mydb.cursor()
 mycursor.execute("select * from batchno where batchno ='%s'"%(result))
 x=mycursor.fetchall()
