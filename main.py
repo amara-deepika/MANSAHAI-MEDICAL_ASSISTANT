@@ -22,9 +22,9 @@ def register():
             otp=str(otp)
             import smtplib
             server=smtplib.SMTP_SSL("smtp.gmail.com",465)
-            server.login("amarajaibhargav@gmail.com","xsao uzpk rnev gmqp")
-            ans="hey this is a message from SOUL BEAT \n your otp is:"+str(otp)
-            server.sendmail("amarajaibhargav@gmail.com",user_email,ans)
+            server.login("XXXXXXXXXXXXX@gmail.com","XXXXXXXXXXXXXXXXXXXXX")
+            ans="hey this is a message from MANSAHAI \n your otp is:"+str(otp)
+            server.sendmail("XXXXXXXXXXXXXX@gmail.com",user_email,ans)
             server.quit()
             verification=input("enter your otp")
             if otp==verification:
@@ -50,7 +50,7 @@ def user():
     counter1=1
     if d[user]==phone_no:
         import mysql.connector
-        mydb=mysql.connector.connect(host="localhost",user="root",passwd="Omganapati@1",database="mansahaidatabase")
+        mydb=mysql.connector.connect(host="localhost",user="root",passwd="OXXXXXXXXXXXi@1",database="mansahaidatabase")
         mycursor=mydb.cursor()
         print("user matched")
         print("you are now ready to access")
@@ -169,7 +169,7 @@ def bill():
     med=[]
     num=[]
     import mysql.connector
-    mydb=mysql.connector.connect(host="localhost",user="root",passwd="Omganapati@1",database="mansahaidatabase")
+    mydb=mysql.connector.connect(host="localhost",user="root",passwd="XXXXXXXXXXXXXti@1",database="mansahaidatabase")
     mycursor=mydb.cursor()
     deff="yes"
     while deff.lower()=="yes":
@@ -203,7 +203,7 @@ def bill():
     user_email=input("please input your email id so that we can send you your bill")
     import smtplib,json
     server=smtplib.SMTP_SSL("smtp.gmail.com",465)
-    server.login("amarajaibhargav@gmail.com","xsao uzpk rnev gmqp")
+    server.login("XXXXXXXXXXXv@gmail.com","XXXXX")
     bill=json.dumps(d,indent=4)
     up=(90/100)*int(sumup)
     saved=int(sumup)-int(up)
@@ -212,7 +212,7 @@ def bill():
     sumup=str(sumup)
     bill=str(bill)
     complete_bill="this is an officail bill from mansahi"+bill+"you have to pay"+up+"&&"+"   you have saved:"+saved+"Rs"
-    server.sendmail("amarajaibhargav@gmail.com",user_email,complete_bill)
+    server.sendmail("XXXXXXXXXXXXXXX@gmail.com",user_email,complete_bill)
     server.quit()
     ##not for user use:(what ever happens after this is not displayed to the user)
     fin=open("profit_admin.txt","a")
